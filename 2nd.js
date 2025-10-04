@@ -1,16 +1,17 @@
 // Positive ,Negative or Zero
-function checkNumber(num) {
+
+let num = prompt("enter a num: ");
+
   if (!isNaN(num)) {
     if (num == 0) {
-      return "Zero";
+      console.log("Zero")   ;
     } else if (num < 0) {
-      return "Negative";
+      console.log("Negative");
     } else {
-      return "Positive";
-    }
+      console.log("Positive");
+    } 
   } else {
-    return "Invalid input";
+    console.log("Invalid input");
   }
-}
-let num = prompt("enter a num: ");
-console.log(checkNumber(num));
+
+
